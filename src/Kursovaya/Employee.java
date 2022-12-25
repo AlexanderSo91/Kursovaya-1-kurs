@@ -36,9 +36,6 @@ public class Employee {
         return id;
     }
 
-    public static int getCounter() {
-        return counter;
-    }
 
     public void setDepartment(int department) {
         this.department = department;
@@ -57,62 +54,5 @@ public class Employee {
                 ", id=" + id +
                 '}';
     }
-
-    public static void salaryExpensesMonth(Employee[] employee) {
-        System.out.print("Сумма затрат на зарплаты в месяц - ");
-        int salarysome = 0;
-        for (Employee employees : employee) {
-            salarysome = salarysome + employees.getSalary();
-        }
-        System.out.println(salarysome + " рублей");
-    }
-
-    public static void minSalaryMonth(Employee[] employee) {
-        System.out.print("Сотрудник с минимальной зарплатой - ");
-        int minSalary = employee[0].getSalary();
-        for (Employee employees : employee) {
-            if (employees.getSalary() < minSalary) {
-                minSalary = employees.getSalary();
-            }
-        }
-        System.out.println(minSalary + " рублей");
-
-    }
-
-
-    public static void maxSalaryMonth(Employee[] employee) {
-        System.out.print("Сотрудник с максимальной зарплатой - ");
-        int maxSalary = employee[0].getSalary();
-        for (Employee employees : employee) {
-            if (employees.getSalary() > maxSalary) {
-                maxSalary = employees.getSalary();
-            }
-        }
-        System.out.println(maxSalary + " рублей");
-
-
-    }
-
-
-    public static void averageValue(Employee[] employee) {
-        System.out.print("Среднее значение зарплат - ");
-        int averageValue = employee[0].getSalary();
-        for (Employee employees : employee) {
-            averageValue = averageValue + employees.getSalary();
-        }
-        System.out.println(averageValue +" рублей");
-    }
-
-
-
-
-    public static void printName(Employee[] workers) {
-        for (Employee worker : workers) {
-            System.out.println(worker.getName() + " ");
-        }
-    }
 }
-
-
-
 
