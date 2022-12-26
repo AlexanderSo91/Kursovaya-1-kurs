@@ -11,7 +11,6 @@ public class Employee {
 
 
     public Employee(String name, int department, int salary) {
-
         this.name = name;
         this.department = department;
         this.salary = salary;
@@ -54,5 +53,6 @@ public class Employee {
                 ", id=" + id +
                 '}';
     }
+
 }
 
